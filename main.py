@@ -12,6 +12,11 @@ app = Flask(__name__)
 def home_route():
     return render_template("home.html", projects=data.setup())
 
+# connects /hello path of server to render hello.html
+@app.route('/PaulN/')
+def hello_route():
+    return render_template("PaulN.html", projects=data.setup())
+
 
 # connects /hello path of server to render hello.html
 @app.route('/hello/')
