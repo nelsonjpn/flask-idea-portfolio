@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Paul's File</title>
-</head>
-<body>
-<H1>Hello World!</H1>
-</body>
-</html>
+{% extends "base.html" %}
+
+{% block title %}
+<h1>Paul's Project</h1>
+{% endblock %}
+
+{% block link1 %}
+<a href="https://www.glentoran.com/" target="New" class="btn">Glentoran FC</a>
+{% endblock %}

@@ -51,6 +51,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="/all/">About</a>
                 </li>
+                <li>
+                    <a class="nav-link" href="/PaulN/">Paul's Link</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -109,15 +112,15 @@
 
 {% block script %}
 <script src="https://threejs.org/build/three.js"></script>
-<script src="{{ url_for('static', filename='vanta.birds.min.js') }}"></script>
+<script src="{{ url_for('static', filename='vanta.rings.min.js') }}"></script>
 <script>
 
-    VANTA.BIRDS({
+    VANTA.RINGS({
         el: "body",
         mouseControls: true,
         touchControls: true,
         gyroControls: false,
-        minHeight: 200.00,
+        minHeight: 300.00,
         minWidth: 200.00,
         scale: 1.00,
         scaleMobile: 1.00,
